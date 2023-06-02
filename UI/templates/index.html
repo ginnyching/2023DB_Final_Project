@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+  <title>Database</title>
+
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <link href="../static/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header id="header">
+    <select class="select" id="select">
+      <option value="0">請選擇</option>
+      <option value="1">location-date</option>
+      <option value="2">date-hour</option>
+      <option value="3">hour</option>
+    </select>
+
+    <input type="text" class="location" id="location" placeholder="location"> </input>
+    <input type="text" class="date" id="date" placeholder="date"> </input>
+    <input type="text" class="hour" id="hour" placeholder="hour"> </input>
+
+    <input type="range" min="1" max="24" value="12" class="slider" id="slider"> </input>
+    <a class="sliderValue" id="sliderValue"> 12 o'clock</a>
+
+    <button class='search'> search </button>
+  </header>
+</body>
+
+<script src="../static/main.js"></script>
+
+</html>
