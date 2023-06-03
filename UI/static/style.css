@@ -1,0 +1,27 @@
+header{
+  margin: 2vw;
+}
+
+.select{
+  float: left;
+}
+
+.location, .date, .hour{
+  margin-left: 1vw;
+  float: left;
+}
+
+.slider{
+  margin-left: 1vw;
+  float: left;
+}
+
+.sliderValue{
+  margin-left: 1vw;
+  float: left;
+}
+
+.search{
+  margin-left: 1vw;
+  float: left;
+}
