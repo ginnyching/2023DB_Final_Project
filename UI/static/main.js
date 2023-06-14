@@ -7,11 +7,15 @@ $('.hour').hide();
 $('.slider').hide();
 $('.sliderValue').hide();
 $('.search').hide();
+$('.image').hide();
 
 document.getElementById("slider").oninput = function(e)
 {
     var hour = document.getElementById("slider").value;
     document.getElementById('sliderValue').innerHTML = hour + " o'clock";
+
+    var image = document.getElementById("image");
+    image.src = "../static/image/image (" + hour + ").png";
 
     console.log(hour);
 };
@@ -29,7 +33,7 @@ $('.search').on('click', function(e)
       dateHour();
       break;
     case "3":
-      date();
+      hour();
       break;
     default:
       return;
@@ -64,8 +68,6 @@ function doSelect()
       $('.location').hide();
       $('.date').show();
       $('.hour').hide();
-      $('.slider').show();
-      $('.sliderValue').show();
       break;
     default:
       return;
@@ -89,6 +91,10 @@ function locationDate()
     dataTwo: date
   }, function(data) {
       console.log(data);
+
+      $('.image').show();
+      var image = document.getElementById("image");
+      image.src = "../static/image/image (25).png";
   });
 }
 
@@ -107,11 +113,18 @@ function dateHour()
     dataTwo: hour
   }, function(data) {
       console.log(data);
+
+      $('.image').show();
+      var image = document.getElementById("image");
+      image.src = "../static/image/image (26).png";
   });
 }
 
-function date()
+function hour()
 {
+  $('.slider').show();
+  $('.sliderValue').show();
+
   var date = document.getElementById("date").value;
   var slider = document.getElementById("slider").value;
 
@@ -125,12 +138,16 @@ function date()
     dataTwo: slider
   }, function(data) {
       console.log(data);
+
+      $('.image').show();
+      var image = document.getElementById("image");
+      image.src = "../static/image/image (12).png";
   });
 }
 
 function reset()
 {
-  console.log("123");
+  console.log("reset");
   var temp = document.getElementById("location");
   temp.value = "";
   temp = document.getElementById("date");

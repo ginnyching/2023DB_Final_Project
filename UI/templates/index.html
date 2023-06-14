@@ -7,6 +7,7 @@
 
   <title>Database</title>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.9/p5.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -27,13 +28,23 @@
     <input type="text" class="date" id="date" placeholder="date"> </input>
     <input type="text" class="hour" id="hour" placeholder="hour"> </input>
 
+    <button class='search'> search </button>
+
     <input type="range" min="1" max="24" value="12" class="slider" id="slider"> </input>
     <a class="sliderValue" id="sliderValue"> 12 o'clock</a>
-
-    <button class='search'> search </button>
   </header>
+
+  <main id="main">
+    <img class="image" id="image"></img>
+  </main>
 </body>
 
 <script src="../static/main.js"></script>
+
+<script>
+  $(document).bind("contextmenu copy selectstart", function() {
+    return false;
+  });
+</script>
 
 </html>

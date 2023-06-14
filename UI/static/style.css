@@ -2,6 +2,11 @@ header{
   margin: 2vw;
 }
 
+main{
+  padding: 2vw;
+  padding-top: 3vw;
+}
+
 .select{
   float: left;
 }
@@ -24,4 +29,16 @@ header{
 .search{
   margin-left: 1vw;
   float: left;
+}
+
+@media screen and (min-width: 1024px) {
+  .image {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .image {
+    width: 90vw;
+  }
 }
