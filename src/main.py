@@ -47,7 +47,7 @@ def mainJs():
         plt.clf()
     if select=="3":
         peak_month_pd, ax = avg_month_distribution()
-        peak_month_pd.plot.line("month",ax=ax,color="red",label=".")
+        peak_month_pd.plot.line(ax=ax,color="red",label=".")
         plt.title("Pickup month Distribution",fontsize=25)
         plt.xlabel("month",fontsize=20)
         plt.ylabel("count",fontsize=20)
