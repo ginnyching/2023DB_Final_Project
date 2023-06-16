@@ -1,5 +1,3 @@
-import time
-
 from flask import Flask, jsonify, render_template, request
 app = Flask(__name__)
 
@@ -12,7 +10,6 @@ def mainJs():
     print(type)
     print(dataOne)
     print(dataTwo)
-    time.sleep(5)
     return jsonify("done")
 
 @app.route('/')

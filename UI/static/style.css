@@ -4,30 +4,26 @@ header{
 
 main{
   padding: 2vw;
-  padding-top: 3vw;
+  padding-top: 4vw;
 }
 
-.select{
-  float: left;
-}
-
-.location, .date, .hour{
-  margin-left: 1vw;
-  float: left;
-}
-
-.slider{
-  margin-left: 1vw;
-  float: left;
-}
-
-.sliderValue{
-  margin-left: 1vw;
+.select, .month, .date{
+  margin-right: 1vw;
   float: left;
 }
 
 .search{
-  margin-left: 1vw;
+  float: left;
+}
+
+.image{
+  background-color: #FFF;
+	padding: 2px;
+	border: 1px solid #CCC;
+}
+
+.zoomIn, .zoomOut{
+  margin-right: 1vw;
   float: left;
 }
 
