@@ -1,0 +1,40 @@
+header{
+  margin: 2vw;
+}
+
+main{
+  padding: 2vw;
+  padding-top: 4vw;
+}
+
+.select, .month, .date{
+  margin-right: 1vw;
+  float: left;
+}
+
+.search{
+  float: left;
+}
+
+.image{
+  background-color: #FFF;
+	padding: 2px;
+	border: 1px solid #CCC;
+}
+
+.zoomIn, .zoomOut{
+  margin-right: 1vw;
+  float: left;
+}
+
+@media screen and (min-width: 1024px) {
+  .image {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .image {
+    width: 90vw;
+  }
+}
